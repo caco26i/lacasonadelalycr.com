@@ -1,0 +1,1818 @@
+/*! normalize.css 2011-08-31T22:02 UTC · http://github.com/necolas/normalize.css */
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+
+audio:not([controls]) {
+    display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+
+[hidden] {
+    display: none;
+}
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    overflow-y: scroll; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+    -ms-text-size-adjust: 100%; /* 3 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+
+body {
+    margin: 0;
+}
+
+/* 
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a {
+    color: #FFF;
+}
+
+a:visited {
+    color: #fff;
+}
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+
+a:focus {
+    outline: 0;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3/4, S4/5, Chrome
+*/
+
+b, 
+strong { 
+    font-weight: bold; 
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+
+/* 1 */
+
+q {
+    quotes: none;
+}
+
+/* 2 */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+small {
+    font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul,
+ol {
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, F3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+
+figure {
+    margin: 0;
+}
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent margin and padding
+ */
+
+fieldset {
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects alignment displayed oddly in IE6/7
+ */
+
+legend {
+    border: 0; /* 1 */
+    *margin-left: -7px; /* 2 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, F3/4, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * 1. Addresses FF3/4 setting line-height using !important in the UA stylesheet
+ * 2. Corrects inner spacing displayed oddly in IE6/7
+ */
+
+button,
+input {
+    line-height: normal; /* 1 */
+    *overflow: visible;  /* 2 */
+}
+
+/*
+ * Corrects overlap and whitespace issue for buttons and inputs in IE6/7
+ * Known issue: reintroduces inner spacing
+ */
+
+table button,
+table input {
+    *overflow: auto;
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ */
+
+button,
+html input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    cursor: pointer; /* 1 */
+    -webkit-appearance: button; /* 2 */
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Addresses excess padding in IE8/9
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */ /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Corrects inner padding displayed oddly in S5, Chrome on OSX
+ */
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Corrects inner padding and border displayed oddly in FF3/4
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+	width:100%;
+}
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+/* 
+ * Remove most spacing between table cells
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* =============================================================================
+   Pages
+   ========================================================================== */
+
+
+/*@media only screen and (min-width: 992px) {
+  
+}*/
+
+@media only screen and (max-width: 1920px) {
+	
+	
+}
+
+
+@media only screen and (max-width: 1680px){
+	.cuadro {
+		top:62px;
+	}
+	.logo{
+  		top: -14px;
+	}
+}
+
+@media only screen and (min-width: 1440px) and (max-width : 1600px) {
+	.cuadro {
+		top:103px;
+	}
+	
+	.logo{
+		left: 60px;
+  		top: -7px;
+	}
+}
+
+
+@media only screen and (max-width: 1366px){
+	.cuadro {
+		top:103px;
+	}
+	
+	.logo{
+		left: 60px;
+		top: -7px;
+	}
+	
+	.bg-header{
+		height:170px;
+	}
+	
+	.imagen_1 img, .imagen_2 img, .imagen_3 img {
+		position: absolute;
+	
+		top: 0;
+		bottom: 0;
+		left: -20px;
+
+		height: 100%;
+	}	
+	
+	.imagen_2 img{
+		width: calc(100% + 40px);
+	}
+	
+	
+}
+
+@media only screen and (max-width: 1280px){
+	.cuadro {
+		top:103px;
+	}
+	
+	.logo{
+		left: 84px;
+		top: -12px;
+	}
+}
+
+
+/* Large desktop */
+@media (max-width: 1200px) {		
+	.navbar-default{
+		padding:0;
+	}
+	
+	.navbar-default .navbar-toggle{
+		top: 4px;
+		right: 40%;
+	}	
+	
+	.navbar-collapse{
+		border-top:none !important;
+		box-shadow:none;
+	}
+	
+	.navbar-collapse.in{
+		overflow:visible !important;
+		border:transparent;
+	}
+	
+	.container-fluid > .navbar-collapse{
+		background-color:transparent;
+	}
+	
+	.socials{
+		right:0;
+	}
+	
+	.cuadro {
+		top:97px;
+	}
+	
+	.logo{
+		left: 30px;
+  		top: 3px;
+		margin: 0;
+		width: 250px;
+	}
+	
+	.bg-header{
+		height:170px;
+	}
+
+	
+	.contacto .captcha label {
+	  width: 50%;
+	  margin-right: 10px;
+	}
+	
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px){	
+	.logo{
+		width: 260px;
+		left: 0;
+		top: 0;
+		margin: 0;
+	}
+	
+	.bg-header {
+	  height: 190px;
+	}
+	
+	.navbar-default .navbar-toggle{
+		top: 4px;
+		right: 40%;
+	}	
+	
+	.navbar-collapse{
+		border-top:none !important;
+		box-shadow:none;
+	}
+	
+	.navbar-collapse.in{
+		overflow:visible !important;
+		border:transparent;
+	}
+	
+	.container-fluid > .navbar-collapse{
+		background-color:transparent;
+	}
+	
+	.socials{
+		right:0;
+	}
+	
+	#menu_principal{
+		top: -180px;
+  		width: 70%;
+		padding: 0px;
+	}
+	
+	#menu_principal li{
+		float:left;
+	}
+	
+	#menu_principal li a{
+		line-height:18px;
+		width:100%;
+	}
+	
+	.nav > li > a {
+		position: relative;
+		display: block;
+		padding: 10px 7px;
+	}
+	
+	.slider-restaurantes {
+		margin-top: 0px !important;
+	}
+	
+	.imagen_2 img {
+		width: auto !important;
+	}
+
+	.inicio h3 {
+		font-size: 34px;
+		padding: 5% 5%;
+	}
+	
+	.nosotros h1 {
+		width: 70%;
+	}
+
+	.menu-restaurante h1 {
+		width: 50%;
+	}
+
+	.restaurantes h1 {
+		width: 75%;
+	}
+
+	#restaurantes .nav-tabs > li > a {
+		height: 55px;
+	}
+	
+	.galeria h1{
+		width:55%;
+	}
+	
+	.lista_galeria li a .project-info{
+		width:85%;
+	}
+	
+	.contacto{
+		margin-top:100px;
+		padding-bottom: 150px;
+	}
+	
+	.contacto h1{
+		width:70%;
+	}
+	
+	.contacto .captcha label {
+	  width: 50%;
+	  margin-right: 10px;
+	}
+	
+	.site-info h1{
+		text-align:center;
+	}
+			
+}
+	
+
+@media (max-width: 991px){
+	
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px){
+	.site-header {
+		position: relative;
+		width: 100%;
+		z-index: 99999;
+	}
+	
+	.logo{
+		width: 160px;
+		left: 0%;
+		top: -5px;
+		margin: 0;
+		margin-bottom: 0;
+		height: auto;
+	}
+	
+	.cuadro{
+		display:none;
+	}
+	
+	.bg-header {
+	  height: 90px;
+	 
+	}	
+	
+	.navbar-default .navbar-toggle{
+		top: 0;
+		right: 0;
+		position: fixed;
+	}
+	
+	.navbar-default .navbar-nav > li > a {
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.navbar-default .navbar-nav > li > a:hover{
+		background-color:rgba(213, 213, 213, 1);
+		color: #fff;
+	}
+	
+	.navbar-collapse{
+		border-top:none !important;
+		box-shadow:none;
+	}
+	
+	.navbar-collapse.in{
+		overflow:visible !important;
+		border:transparent;
+	}
+	
+	.container-fluid > .navbar-collapse{	
+		background-color: rgba(236, 27, 35, 1);
+		position: fixed;
+		top: 50px;
+		right: 30px;
+		left: 30px;
+	}
+	
+	#menu_principal{
+		top:0px;
+		width: 100%;
+		padding: 0px;
+		right: 0px;
+	}
+	
+	#menu_principal li{
+		clear:both;
+		width:100%
+	}
+	
+	#menu_principal li.current{
+		background-color:#fff;
+	}
+	
+	#menu_principal li a{
+		line-height:8px;
+		width:100%;
+	}
+	 
+	 .inicio h3{
+		 font-size:24px;
+		 padding:5% 5%;
+	 }
+	 
+	 .imagen_1 h2 {
+		width: 80%;
+		top: 85%;
+		text-align: right;
+	}
+	
+	.imagen_2 h2 {
+		  top:90%;
+	}
+	 
+	 .imagen_3 h2 {
+		text-align: center;
+		top: 84%;
+		right: 16px;
+	 }
+	 
+	 .imagen_1 img, .imagen_2 img, .imagen_3 img {
+	  position: relative;
+	  left: -60%;
+	}
+	
+	.imagen_2 img {
+		width: auto !important;
+	}
+	 
+	 .nosotros {
+		  padding-top: 120px;
+	 }
+	 
+	 .nosotros h1 {
+	  width: 80%;
+	}
+	
+	.nosotros h3{
+		padding:0 15%;
+	}
+	
+	.restaurantes h1{
+		width:90%;
+	}
+	
+	#restaurantes .nav-tabs > li > a{
+		height:55px;
+	}
+	
+	.galeria h1{
+		width:65%;
+	}
+	
+	.lista_galeria li a .project-info{
+		width:85%;
+	}
+	
+	.contacto{
+		margin-top:100px;
+		padding-bottom: 100px;
+	}
+	
+	.contacto h1{
+		width:80%;
+	}
+	
+	.contacto .captcha input {
+	  width: 40%;
+	  height: 25px;
+	  position: relative;
+	  top: 2px;
+	  right: 0;
+	  float: right;
+	}
+	
+	.contacto .captcha img{
+		position: absolute;
+		top: 2px;
+		right: 42%;
+	}
+	
+	input[type="submit"] {
+		top:10px;
+	}
+	
+	.col-sm-3 {
+		width: 100%;
+	}
+		
+	.site-info h1{
+		text-align:center;
+	}
+		
+}
+
+@media (max-width: 640px) {
+    .logo{
+		width: 160px;
+		left: 0%;
+		margin: 0;	
+	}
+	
+	.cuadro{
+		display:none;
+	}
+	
+	header .bg-header {
+		height: auto;
+		border-top: 16px solid #F3F3F3;
+	}
+	
+	.navbar-default {
+		padding: 0;
+		width: 100%;
+		top:12px;
+	}
+	
+	.navbar-default .navbar-toggle{
+		top: 30px;
+		right: -17px;
+	}
+	
+	.navbar-default .navbar-nav > li > a {
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.navbar-default .navbar-nav > li > a:hover{
+		background-color:rgba(213, 213, 213, 1);
+		color: #fff;
+	}
+	
+	.navbar-collapse{
+		border-top:none !important;
+		box-shadow:none;
+	}
+	
+	.navbar-collapse.in{
+		overflow:visible !important;
+		border:transparent;
+	}
+	
+	#menu_principal{
+		top:0px;
+		width: 100%;
+		padding: 0px;
+		right: 0px;
+	}
+	
+	#menu_principal li{
+		clear:both;
+		width:100%
+	}
+	
+	#menu_principal li.current{
+		background-color:#fff;
+	}
+	
+	#menu_principal li a{
+		line-height:8px;
+		width:100%;
+	}
+	
+	.slider-restaurantes {
+		margin-top: 0px !important;
+		width: 160% !important;
+		left: -30% !important;
+	}
+	
+	 .inicio h3{
+		 font-size:24px;
+		 padding:5% 5%;
+	 }
+	 
+	 .imagen_1 h2 {
+		width: 80%;
+		top: 85%;
+		text-align: right;
+	}
+	
+	.imagen_2 h2 {
+		  top: 50%;
+	}
+	 
+	 .imagen_3 h2 {
+		text-align: center;
+		top: 10%;
+		right: 16px;
+	 }
+	 
+	 .nosotros {
+		  padding-top: 120px;
+	 }
+	 
+	.nosotros h3{
+		padding:0 15%;
+	}
+	
+	#restaurantes .nav-tabs > li > a{
+		height:55px;
+	}
+	
+	.galeria h1{
+		width:65%;
+	}
+	
+	.lista_galeria li a .project-info{
+		width:85%;
+	}
+	
+	.contacto{
+		padding: 50px 0;
+	}
+	
+	.contacto h1{
+		width:80%;
+	}
+	
+	.contacto .captcha input {
+	  width: 40%;
+	  height: 25px;
+	  position: relative;
+	  top: 2px;
+	  right: 0;
+	  float: right;
+	}
+	
+	.contacto .captcha img{
+		position: absolute;
+		top: 2px;
+		right: 42%;
+	}
+	
+	input[type="submit"] {
+		top:10px;
+	}
+	
+	.col-sm-3 {
+		width: 100%;
+	}
+		
+	.site-info h1{
+		text-align:center;
+	}
+	
+	.decor-left {
+		margin: 15px;
+		margin-left: calc(50% - 65px);
+	}
+	
+	.decor-right {
+		margin: 15px;
+		margin-right: calc(50% - 65px);
+	}
+	
+ }
+ 
+ @media (max-width: 480px) {
+	 .logo{
+		width: 160px;
+		left:0%;
+		top:-5px;
+		margin: 0;
+		margin-bottom: 17px;		
+	}
+	
+	.cuadro{
+		display:none;
+	}
+	
+	.bg-header {
+	  height: 105px;	 
+	}	
+	
+	.navbar-default {
+		padding: 0;
+		width: 100%;
+		top:12px;
+	}
+	
+	.navbar-default .navbar-toggle{
+		top: -5px;
+		right: -17px;
+	}
+	
+	.navbar-default .navbar-nav > li > a {
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.navbar-default .navbar-nav > li > a:hover{
+		background-color:rgba(213, 213, 213, 1);
+		color: #fff;
+	}
+	
+	.navbar-collapse{
+		border-top:none !important;
+		box-shadow:none;
+	}
+	
+	.navbar-collapse.in{
+		overflow:visible !important;
+		border:transparent;
+	}
+	
+	#menu_principal{
+		top:0px;
+		width: 100%;
+		padding: 0px;
+		right: 0px;
+	}
+	
+	#menu_principal li{
+		clear:both;
+		width:100%
+	}
+	
+	#menu_principal li.current{
+		background-color:#fff;
+	}
+	
+	#menu_principal li a{03
+		line-height:8px;
+		width:100%;
+	}
+	
+	.inicio{
+		 height: 580px !important;
+		 top:-40px;
+	 }
+	 
+	.inicio h3{
+		font-size:24px;
+		padding: 5% 5%;
+	}
+	 
+	.slider-restaurantes {
+		transform: skewX(30deg);
+		-ms-transform: skewX(30deg);
+		-webkit-transform: skewX(30deg);
+		overflow: visible;
+	}
+	 
+	.imagen_1, .imagen_2, .imagen_3 {
+		width: 33%;
+	}
+	 
+	.imagen_1 img {
+		left: -50%;
+		width: 220%;
+	}
+	 
+	 .imagen_1 h2 {
+		width: 80%;
+		top: 85%;
+		text-align: center;
+	}
+	
+	 .imagen_2 img {
+		left: -100%;
+		width: 275%;
+	}
+	
+	.imagen_2 h2 {
+		top: 50%;
+		left: -30px;
+	}
+
+	 .imagen_3 h2 {
+		text-align: left;
+		top: 10%;
+		left: -50px;
+	 }
+	 
+	 .imagen_3 img {
+		left: -85%;
+		width: 215%;
+	}
+	
+	.slider-restaurantes h2{
+		font-size:20px;
+	}
+	
+	.vertical-5g {
+	  transform: skewX(-30deg);
+	  -ms-transform: skewX(-30deg);
+	  -webkit-transform: skewX(-30deg);
+	}
+	
+	.diagonal-5g {
+	  transform: skewX(30deg);
+	  -ms-transform: skewX(30deg);
+	  -webkit-transform: skewX(30deg);
+	}
+	 
+	 .nosotros {
+		  padding-top: 120px;
+	 }
+	 
+	 .nosotros h1 {
+	  width: 90%;
+	}
+	
+	.nosotros h1 span{
+		font-size:32px;
+	}
+	
+	.nosotros h3{
+		padding:0 15%;
+	}
+	
+	.menu-restaurante h1 span{
+		font-size:34px;
+	}
+	
+	.lista-menu i {
+	  font-size: 70px;
+	  width: 90px;
+	  height: 90px;
+	  margin: 0 10px;
+	}
+	
+	.ensaladas i {
+	  font-size: 70px;
+	  padding-top: 4px;
+	}
+	
+	.postres i {
+	  font-size: 70px;
+	}
+	
+	.restaurantes h1{
+		width:100%;
+		font-size:32px;
+	}
+	
+	
+	#restaurantes .nav-tabs > li > a{
+		height:55px;
+	}
+	
+	.galeria h1{
+		width:80%;
+		font-size:34px;
+	}
+	
+	.lista_galeria li a .project-info{
+		width:85%;
+	}
+	
+	.contacto{
+		margin-top:100px;
+		padding-bottom: 100px;
+	}
+	
+	.contacto h1{
+		width:100%;
+		font-size:32px;
+	}
+	
+	.contacto .captcha input {
+	  width: 30%;
+	  height: 25px;
+	  position: relative;
+	  top: 2px;
+	  right: 0;
+	  float: right;
+	}
+	
+	.contacto .captcha img{
+		position: absolute;
+		top: 2px;
+		right: 35%;
+	}
+	
+	input[type="submit"] {
+		top:10px;
+	}
+	
+	.col-sm-3 {
+		width: 100%;
+	}
+		
+	.site-info h1{
+		text-align:center;
+	}
+	 
+	.lista-menu {
+		width: 100% !important;
+	}
+ }
+
+@media only screen and (min-width: 320px) and (max-width : 400px){	
+	.logo{
+		width: 160px;
+		left:0%;
+		top:-10px;
+		margin: 0;
+		margin-bottom: 17px;		
+	}
+	
+	.cuadro{
+		display:none;
+	}
+	
+	.bg-header {
+	  height: 105px;
+		border-top: 40px solid #F3F3F3 !important;
+	}	
+	
+	.navbar-default {
+		padding: 0;
+		width: 100%;
+		top:12px;
+	}
+	
+	.navbar-default .navbar-toggle{
+		top: -5px;
+		right: -17px;
+	}
+	
+	.navbar-default .navbar-nav > li > a {
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.navbar-default .navbar-nav > li > a:hover{
+		background-color:rgba(213, 213, 213, 1);
+		color: #fff;
+	}
+	
+	#menu_principal{
+		top:0px;
+		width: 100%;
+		padding: 0px;
+		right: 0px;
+	}
+	
+	#menu_principal li{
+		clear:both;
+		width:100%
+	}
+	
+	#menu_principal li.current{
+		background-color:#fff;
+	}
+	
+	#menu_principal li a{
+		line-height:8px;
+		width:100%;
+	}
+	
+	.inicio{
+		 height: 580px !important;
+		 top:-40px;
+	 }
+	 
+	 .inicio h3{
+		 font-size:24px;
+		 padding:0 5%;
+	 }
+	
+	.imagen_1 img {
+		left: -50%;
+		width: 220%;
+	}
+	 
+	 .imagen_1 h2 {
+		width: 80%;
+		top: 85%;
+		text-align: center;
+	}
+
+	 .imagen_2 img {
+		left: -100%;
+		width: 275%;
+	}
+	
+	.imagen_2 h2 {
+		  top:60%;
+	}
+
+	 .imagen_3 h2 {
+		text-align: center;
+		top: 10%;
+		right: -50px;
+		width: 20%;
+	 }
+	 
+	 .imagen_3 img {
+		left: -85%;
+		top: -40px;
+		width: 215%;
+	}
+	
+	.slider-restaurantes h2{
+		font-size:20px;
+	}
+	
+	.vertical-5g {
+	  transform: skewX(-30deg);
+	  -ms-transform: skewX(-30deg);
+	  -webkit-transform: skewX(-30deg);
+	}
+	
+	.diagonal-5g {
+	  transform: skewX(30deg);
+	  -ms-transform: skewX(30deg);
+	  -webkit-transform: skewX(30deg);
+	}
+	 
+	 .nosotros {
+		  padding-top: 120px;
+	 }
+	 
+	 .nosotros h1 {
+	  width: 90%;
+	}
+	
+	.nosotros h1 span{
+		font-size:32px;
+	}
+	
+	.nosotros h3{
+		padding:0 15%;
+	}
+	
+	.menu-restaurante h1 {
+  		width: 72%;
+	}
+	
+	.menu-restaurante h1 span{
+		font-size:34px;
+	}
+	
+	.lista-menu i {
+	  font-size: 70px;
+	  width: 90px;
+	  height: 90px;
+	  margin: 0 10px;
+		margin-bottom: 50px;
+	}
+	
+	.ensaladas i {
+	  font-size: 70px;
+	  padding-top: 4px;
+	}
+	
+	.postres i {
+	  font-size: 70px;
+	}
+	
+	.restaurantes h1{
+		width:100%;
+		font-size:32px;
+	}
+	
+	.lista-menu {
+		padding-left: 20% !important;
+	}
+	
+	#restaurantes .nav-tabs > li > a{
+		height:55px;
+	}
+	
+	.galeria h1{
+		width:80%;
+		font-size:34px;
+	}
+	
+	.lista_galeria li a .project-info{
+		width:85%;
+	}
+	
+	.contacto{
+		margin-top:100px;
+		padding-bottom: 100px;
+	}
+	
+	.contacto h1{
+		width:100%;
+		font-size:32px;
+	}
+	
+	.contacto .captcha input {
+	  width: 30%;
+	  height: 25px;
+	  position: relative;
+	  top: 2px;
+	  right: 0;
+	  float: right;
+	}
+	
+	.contacto .captcha img{
+		position: absolute;
+		top: 2px;
+		right: 35%;
+	}
+	
+	input[type="submit"] {
+		top:10px;
+	}
+	
+	.col-sm-3 {
+		width: 100%;
+	}
+		
+	.site-info h1{
+		text-align:center;
+	}
+}
+
+/* Landscape phones and down */
+@media (min-width: 480px) {
+	
+}
+
+
+@media only screen and (min-width : 640px) {
+	
+}
+
+@media only screen and (min-width : 480px){
+
+}
+
+@media only screen and (max-width: 320px) {	
+	.logo{
+		width: 160px;
+		left:0%;
+		top:-5px;
+		margin: 0;
+		margin-bottom: 17px;		
+	}
+	
+	.cuadro{
+		display:none;
+	}
+	
+	.bg-header {
+	  height: 105px;	 
+	}	
+	
+	.navbar-default {
+		padding: 0;
+		width: 100%;
+		top:12px;
+	}
+	
+	.navbar-default .navbar-toggle{
+		top: -5px;
+		right: -17px;
+	}
+	
+	.navbar-default .navbar-nav > li > a {
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.navbar-default .navbar-nav > li > a:hover{
+		background-color:rgba(213, 213, 213, 1);
+		color: #fff;
+	}
+	
+	.navbar-collapse{
+		border-top:none !important;
+		box-shadow:none;
+	}
+	
+	.navbar-collapse.in{
+		overflow:visible !important;
+		border:transparent;
+	}
+	
+	.container-fluid > .navbar-collapse{	
+		background-color: rgba(236, 27, 35, 1);
+		position: relative;
+		top: -170px;
+		width: 50%;
+		right: 0;
+		float: right;
+	}
+	
+	#menu_principal{
+		top:0px;
+		width: 100%;
+		padding: 0px;
+		right: 0px;
+	}
+	
+	#menu_principal li{
+		clear:both;
+		width:100%
+	}
+	
+	#menu_principal li.current{
+		background-color:#fff;
+	}
+	
+	#menu_principal li a{
+		line-height:8px;
+		width:100%;
+	}
+	
+	.inicio{
+		 height: 580px !important;
+		 top:-40px;
+	 }
+	 
+	 .inicio h3{
+		 font-size:24px;
+		 padding:0 5%;
+	 }
+	 
+	 .slider-restaurantes {
+		 height: 500px !important;
+	 }	
+	 
+	 .imagen_1 {
+		width: 60%;
+  		left: -30%;
+	} 
+	
+	.imagen_1 img {
+		left: -50%;
+		top: 10px;
+		width: 220%;
+	}
+	 
+	 .imagen_1 h2 {
+		width: 80%;
+		top: 85%;
+		text-align: center;
+	}
+	
+	.imagen_2 {
+	  width: 60%;
+	  left: 15%;
+	}
+	
+	 .imagen_2 img {
+		left: -100%;
+		top: -30px;
+		width: 275%;
+	}
+	
+	.imagen_2 h2 {
+		  top:60%;
+	}
+	
+	.imagen_3 {
+	  width: 60%;
+	  right: -25%;
+	}
+	 
+	 .imagen_3 h2 {
+		text-align: center;
+		top: 20%;
+		right: 0px;
+	 }
+	 
+	 .imagen_3 img {
+		left: -85%;
+		top: -40px;
+		width: 215%;
+	}
+	
+	.slider-restaurantes h2{
+		font-size:20px;
+	}
+	
+	.vertical-5g {
+	  transform: skewX(-30deg);
+	  -ms-transform: skewX(-30deg);
+	  -webkit-transform: skewX(-30deg);
+	}
+	
+	.diagonal-5g {
+	  transform: skewX(30deg);
+	  -ms-transform: skewX(30deg);
+	  -webkit-transform: skewX(30deg);
+	}
+	 
+	 .nosotros {
+		  padding-top: 120px;
+	 }
+	 
+	 .nosotros h1 {
+	  width: 90%;
+	}
+	
+	.nosotros h1 span{
+		font-size:32px;
+	}
+	
+	.nosotros h3{
+		padding:0 15%;
+	}
+	
+	.menu-restaurante h1 {
+  		width: 72%;
+	}
+	
+	.menu-restaurante h1 span{
+		font-size:34px;
+	}
+	
+	.lista-menu i {
+	  font-size: 70px;
+	  width: 90px;
+	  height: 90px;
+	  margin: 0 10px;
+	}
+	
+	.ensaladas i {
+	  font-size: 70px;
+	  padding-top: 4px;
+	}
+	
+	.postres i {
+	  font-size: 70px;
+	}
+	
+	.restaurantes h1{
+		width:100%;
+		font-size:32px;
+	}
+	
+	
+	#restaurantes .nav-tabs > li > a{
+		height:55px;
+	}
+	
+	.galeria h1{
+		width:80%;
+		font-size:34px;
+	}
+	
+	.lista_galeria li a .project-info{
+		width:85%;
+	}
+	
+	.contacto{
+		margin-top:100px;
+		padding-bottom: 100px;
+	}
+	
+	.contacto h1{
+		width:100%;
+		font-size:32px;
+	}
+	
+	.contacto .captcha input {
+	  width: 30%;
+	  height: 25px;
+	  position: relative;
+	  top: 2px;
+	  right: 0;
+	  float: right;
+	}
+	
+	.contacto .captcha img{
+		position: absolute;
+		top: 2px;
+		right: 35%;
+	}
+	
+	input[type="submit"] {
+		top:10px;
+	}
+	
+	.col-sm-3 {
+		width: 100%;
+	}
+		
+	.site-info h1{
+		text-align:center;
+	}
+}
+
+
+/* Portrait o Vertical */ 
+@media screen and (orientation:portrait) {
+    
+} 
+
+/* Landscape */
+@media screen and (orientation:landscape) { 
+    /* Aquí van los estilos para las pantallas en horizontal */ 
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+}
+@media only screen and (max-width: 568px) {
+}
+
+@media only screen and (max-width: 518px) {
+  
+}
+@media only screen and (max-width: 468px) {
+  
+}
+@media only screen and (max-width: 418px) {
+  
+}
+@media only screen and (max-width: 368px) {
+  
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+		
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) and (orientation: landscape) {
+  
+}
+
+
+
+
+
+/* =============================================================================
+   Internet Explorer
+   ========================================================================== */
+
+/* 
+ * Aplica estilos en IE11
+ */
+
+@media screen and (min-width:0\0) {	
+	
+
+} 
+
